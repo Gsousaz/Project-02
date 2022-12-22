@@ -1,0 +1,413 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
+}
+
+.menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 54px;
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+
+.div-display-flex {
+    margin: 0 auto;
+    height: 54px;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-conteudo-menu-esquerda{
+display: flex;
+}
+
+
+.divisoria {
+    width: 1px;
+    height: 22px;
+    margin-right: 10px;
+    background: #DBDBDB;
+}
+
+.menu div div img {
+    width: 103px;
+    height: 29px;
+}
+
+.menu div input {
+    background-color: #FAFAFA;
+    height: 50%;
+    border-radius: 5px;
+}
+
+ion-icon{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Divisória entre menu e conteudo principal */
+
+.container-principal {
+    display: flex;
+    margin: 88px auto;
+    width: 935px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.stories {
+    height: 118px;
+    width: 614px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #DBDBDB;
+    background: #FFFFFF;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+
+.stories ion-icon {
+    font-size: 26px;
+    position: absolute;
+    fill: white;
+    top: 46px;
+    right: 0;
+}
+
+
+.stories div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories div div{
+    height: 80px;
+    width: 80px;
+    gap: 60px;
+    position: relative;
+}
+
+.stories img:nth-child(1){
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+}
+
+.stories img:nth-child(2){
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+.stories p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.post {
+    margin: 24px 0 60px 0;
+    width: 614px;
+    height: 749px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.perfil-post p {
+    text-decoration: bold;
+
+}
+
+.perfil img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+
+}
+
+.perfil p {
+    width: 109px;
+    height: 21px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+
+}
+
+.perfil-media{ 
+    width: 612px;
+    height: 612px;
+}
+
+.perfil-media img{ 
+    width: 612px;
+    height: 612px;
+}
+
+.menu-interativo {
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+}
+
+.botoes div {
+    display: flex;
+    align-items: center;
+}
+
+
+.social-detalhes {
+    padding-left: 10px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.social-detalhes .perfil img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.menu-lateral {
+    margin-left: 29px;
+    width: 293px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-lateral div p:nth-child(1) {
+    width: 117px;
+    height: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #8E8E8E;
+}
+
+.menu-lateral div p:nth-child(2) {
+    width: 55px;
+    height: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #262626;
+}
+
+.perfil-detalhado {
+    height: 120px;
+    width: 293px;
+}
+
+.perfil-detalhado div:nth-child(1) {
+    display: flex;
+    place-items: center;
+    padding-right: 14px;
+}
+
+
+.perfil-detalhado div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.perfil-detalhado img {
+    width: 56px;
+    height: 56px;
+    background: url(/imagens/perfil/guts.jpg);
+    border-radius: 50%;
+}
+
+
+.sugestions-menu {
+    margin-bottom: 17px;
+}
+.sugestions-container {
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sugestions-container div div img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.sugestions-container div div p:nth-child(1){
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.sugestions-container div div p:nth-child(2){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+    width: 100%;
+
+}
+
+.sugestions-container div .follow-button p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139EF2;
+}
+
+.sugestion-card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sugestion-card div div {
+    display: flex;
+}
+
+
+.menu-inferior {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    height: 74px;
+}
+
+
+.menu-inferior div:nth-child(1){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
+}
+
+.menu-inferior div:nth-child(2){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
+}
+
+
+
+
+
+
+@media (max-width: 935px) {
+    .menu-lateral {
+        display: none;
+    }
+
+    .div-display-flex {
+        width: 100%;
+    }
+    .container-principal {
+        width: 614px;
+    }
+}
+
+
+@media (max-width: 935px) {
+    .menu-lateral {
+        display: none;
+    }
+
+    .div-display-flex {
+        width: 100%;
+    }
+    .container-principal {
+        width: 614px;
+    }
+}
+
+
+@media (max-width: 635px){
+    .menu {
+      display: none;  
+    }
+
+    .stories {
+        border: none;
+        background-color: #E5E5E5;;
+    }
+
+
+    .post {
+        width: 100%;
+        height: auto;
+    }
+
+}
